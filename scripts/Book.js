@@ -5,7 +5,7 @@
 	We'd like to give a huge thanks to Taylor Young who drew
 	all of the following images:
 	Ringleader, Clown, Firebreather/fire, Strongman + Game,
-	Elephant, Cannon+Cannonman, lion, and band.
+	Elephant, Cannon+Cannonman, and lion.
 	The remaining images are from Open Clip Art and the bg 
 	was commandeered from google images.
 */
@@ -179,13 +179,13 @@
 		this.note.onload = this.handleResourceLoad;
 		
 		//page 4
-		this.lion.src = 'imgs/temp.png';
+		this.lion.src = 'imgs/lion.png';
 		this.lion.onload = this.handleResourceLoad;
 		this.elephant.src = 'imgs/elephant.png';
 		this.elephant.onload = this.handleResourceLoad;
 		
 		//page 5
-		this.band.src = 'imgs/temp-band.png';
+		this.band.src = 'imgs/band.png';
 		this.band.onload = this.handleResourceLoad;
 		
 		//page 6
@@ -381,8 +381,8 @@
 		bg.x = -250;
 		bg.y = -200;
 		var lion = new Bitmap(book.lion);
-		lion.x = 500;
-		lion.y = 300;
+		lion.x = 392;
+		lion.y = 145;
 		lion.click = function(){
 			book.megaphone.play('lion');
 		}
@@ -407,8 +407,8 @@
 		bg.x = -250;
 		bg.y = -200;
 		var band = new Bitmap(book.band);
-		band.x = 125;
-		band.y = 250;
+		band.x = 135;
+		band.y = 167;
 		band.click = function(){
 			var r = Math.random();
 			if(r < .5)
