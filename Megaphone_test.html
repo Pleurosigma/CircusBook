@@ -1,0 +1,102 @@
+<html>
+	<head>
+		<script src='scripts/jquery.js'></script>
+		<script src='scripts/MegaPhone.js'></script>
+		<script>
+			var data = {
+				'page1narr' : {
+					'start'  : 0,
+					'length' : 6.5
+				},
+				'page2narr' : {
+					'start'  : 7,
+					'length' : 4.5
+				},
+				'page3narr' : {
+					'start'  : 12,
+					'length' : 4.5
+				},
+				'page4narr' : {
+					'start'  : 17,
+					'length' : 5.5
+				},
+				'page5narr' : {
+					'start'  : 23,
+					'length' : 4
+				},
+				'page6narr' : {
+					'start'  : 28,
+					'length' : 4
+				},
+				'page7narr' : {
+					'start'  : 33,
+					'length' : 3.5
+				},
+				'ringleader' : {
+					'start'  : 37,
+					'length' : 4
+				},
+				'honk' :{
+					'start'  : 41,
+					'length' : 1
+				},
+				'fireball' : {
+					'start'  : 43,
+					'length' : 2.5
+				},
+				'grunt1' : {
+					'start'  : 46,
+					'length' : 1.5
+				},
+				'grunt2' : {
+					'start'  : 48,
+					'length' : 2.5
+				},
+				'ding' : {
+					'start'  : 51,
+					'length' : 6.5 
+				},
+				'lion' : {
+					'start'  : 58,
+					'length' : 3.5
+				},
+				'elephant' : {
+					'start'  : 62,
+					'length' : 2
+				},
+				'band1' : { 
+					'start'  : 65,
+					'length' : 7.5
+				},
+				'band2' : {
+					'start'  : 73,
+					'length' : 7.5
+				},
+				'cannonfire' : {
+					'start'  : 81,
+					'length' : 2.5
+				},
+				'cannonyell' : {
+					'start'  : 84,
+					'length' : 1.5
+				}
+			};
+			var megaphone;
+			$(function(){
+				$('#load').click(function(){
+					megaphone = new Megaphone('sounds/audio.wav', data);
+					megaphone.play('cannonfire');
+				});
+				
+				$('#fireball').click(function(){
+					megaphone.play('band2');
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<button id='load'>Load</button>
+		<button id='fireball'>Fireball</button>
+		<button id='play'>Play</button>
+	</body>	
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src='scripts/jquery.js'></script>
+		<script src='scripts/easel.js'></script>
+		<script src='scripts/Book.js'></script>
+		<script src='scripts/Megaphone.js'></script>
+		<link rel='stylesheet' type='text/css' href='css/book.css' />
+		<script>
+			function init(){
+				var stage = new Stage($('#stage')[0]);
+				new Book(stage);
+			}
+			$(init);
+		</script>
+	</head>
+	<body>
+		<canvas id='stage' height='500' width='750'></canvas>
+	</body>
+</html>
